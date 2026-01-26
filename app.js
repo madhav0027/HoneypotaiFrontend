@@ -2,7 +2,7 @@ const chatBox = document.getElementById("chatBox");
 const input = document.getElementById("messageInput");
 
 // Change this to your backend endpoint
-const API_URL = "http://https://ai-honey-pot-test.onrender.com/message";
+const API_URL = "https://ai-honey-pot-test.onrender.com/message";
 
 function addMessage(text, sender) {
   const div = document.createElement("div");
