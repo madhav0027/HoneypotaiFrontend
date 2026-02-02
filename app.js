@@ -30,10 +30,9 @@ async function sendMessage() {
 
     const data = await res.json();
 
-    console.log(data)
 
     // Expecting: { reply: "text here" }
-    addMessage(JSON.stringify(data), "bot");
+    addMessage(JSON.stringify(data.reply), "bot");
 
   } catch (err) {
     addMessage("Server error", "bot");
